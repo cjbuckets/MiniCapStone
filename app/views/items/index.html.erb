@@ -1,0 +1,14 @@
+<img src="http://plainicon.com/dboard/userprod/2805_fce53/prod_thumb/plainicon.com-50107-512px-11a.png">
+
+<h4> You’re one pill away from your dreams. Do you want to live in an elegant lake front home or in a towering mid rise looking over the beautiful city of Chicago? Do you need a little fury companion to accompany you on your morning walks through the park? Have you ever fantasized of performing before thousands of fans? All it takes is one pill to make your wildest dreams come true. </h4>
+<br>
+
+<div class="row>"
+  <% @items.each do |item| %>
+      <h5>Product: <a href="/pills/<%= item.id %>"><%= item.product %></a></h5>
+      <p> Description:    <%= item.description %></p>
+      <p> Price:          <%= item.price %></p>
+    <br>
+<% end %>
+
+</div>

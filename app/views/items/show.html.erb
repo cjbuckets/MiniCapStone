@@ -1,0 +1,12 @@
+<h2> Pills </h2>
+
+<h4>Product:        <%= @item.product %></h4>
+<p> Description:    <%= @item.description %></p>
+<p> Price:          <%= @item.price %></p>
+
+
+<h5><%= link_to "Edit",    "/pills/#{@item.id}/edit" %></h5>
+<h5><%= link_to "Delete",  "/pills/#{@item.id}", method: :delete %></h5>
+
+
+
