@@ -5,10 +5,11 @@
 
 <div class="row>"
   <% @items.each do |item| %>
+      <div class="col-xs-6">
       <h5>Product: <a href="/pills/<%= item.id %>"><%= item.product %></a></h5>
       <p> Description:    <%= item.description %></p>
       <p> Price:          <%= item.price %></p>
-    <br>
-<% end %>
-
+      <br>
+    </div>
+  <% end %>
 </div>

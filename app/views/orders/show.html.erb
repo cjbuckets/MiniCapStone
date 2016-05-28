@@ -1,0 +1,14 @@
+<h2>Your Cart </h2>
+
+<h4>Order Number: <%= @order.id %></h4>
+<h4> Customer: <%= current_user.email %></h4>
+<h4> Product:  <%= @order.product_id %></h4>
+<h4> Quantity: <%= @order.quantity %></h4>
+<br>
+<h4> Subtotal: <%= number_to_currency(@order.subtotal)    %></h4>
+<h4> Tax:      <%= number_to_currency(@order.tax)         %></h4>
+<h4> Total:    <%= number_to_currency(@order.total)       %></h4>
+
+
+
+
